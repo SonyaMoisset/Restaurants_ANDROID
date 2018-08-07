@@ -1,4 +1,4 @@
-package com.sonyamoisset.android.myrestaurants;
+package com.sonyamoisset.android.myrestaurants.models;
 
 import java.util.ArrayList;
 

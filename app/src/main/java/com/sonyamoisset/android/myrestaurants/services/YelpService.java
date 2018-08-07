@@ -1,5 +1,8 @@
-package com.sonyamoisset.android.myrestaurants;
+package com.sonyamoisset.android.myrestaurants.services;
 
+
+import com.sonyamoisset.android.myrestaurants.Constants;
+import com.sonyamoisset.android.myrestaurants.models.Restaurant;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:theme="@style/NoActionBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -23,10 +23,10 @@
         </activity>
 
         <activity
-            android:name=".RestaurantsActivity">
+            android:name=".ui.RestaurantsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.sonyamoisset.android.myrestaurants.MainActivity">
+                android:value="com.sonyamoisset.android.myrestaurants.ui.MainActivity">
             </meta-data>
         </activity>
     </application>

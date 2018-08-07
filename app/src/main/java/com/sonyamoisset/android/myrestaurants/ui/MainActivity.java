@@ -1,4 +1,4 @@
-package com.sonyamoisset.android.myrestaurants;
+package com.sonyamoisset.android.myrestaurants.ui;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.sonyamoisset.android.myrestaurants.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

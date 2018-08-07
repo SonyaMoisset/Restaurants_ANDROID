@@ -1,4 +1,4 @@
-package com.sonyamoisset.android.myrestaurants;
+package com.sonyamoisset.android.myrestaurants.ui;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -8,6 +8,10 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.sonyamoisset.android.myrestaurants.R;
+import com.sonyamoisset.android.myrestaurants.models.Restaurant;
+import com.sonyamoisset.android.myrestaurants.services.YelpService;
 
 import java.io.IOException;
 import java.util.ArrayList;

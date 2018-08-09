@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".ui.RestaurantsActivity">
+            android:name=".ui.RestaurantListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.sonyamoisset.android.myrestaurants.ui.MainActivity">

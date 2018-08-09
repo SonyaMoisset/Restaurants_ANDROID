@@ -63,40 +63,4 @@ public class Restaurant {
     public ArrayList<String> getCategories() {
         return categories;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public void setWebsite(String website) {
-        this.website = website;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public void setAddress(ArrayList<String> address) {
-        this.address = address;
-    }
-
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }
-
-    public void setCategories(ArrayList<String> categories) {
-        this.categories = categories;
-    }
 }

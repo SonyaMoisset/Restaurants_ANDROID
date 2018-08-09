@@ -23,8 +23,6 @@ import okhttp3.Response;
 
 public class RestaurantsActivity extends AppCompatActivity {
 
-    public static final String TAG = RestaurantsActivity.class.getSimpleName();
-
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
 

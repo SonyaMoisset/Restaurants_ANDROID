@@ -22,13 +22,13 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class RestaurantListActivity extends AppCompatActivity {
+    public static final String TAG = RestaurantListActivity.class.getSimpleName();
 
     @BindView(R.id.recyclerView)
     RecyclerView mRecyclerView;
-
     private RestaurantListAdapter mAdapter;
 
-    public ArrayList<Restaurant> restaurants = new ArrayList<>();
+    public ArrayList<Restaurant> mRestaurants = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,25 +44,23 @@ public class RestaurantListActivity extends AppCompatActivity {
 
     private void getRestaurants(String location) {
         final YelpService yelpService = new YelpService();
+
         yelpService.findRestaurants(location, new Callback() {
 
             @Override
-            public void onFailure(@NonNull Call call,
-                                  @NonNull IOException e) {
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
                 e.printStackTrace();
             }
 
             @Override
-            public void onResponse(@NonNull Call call,
-                                   @NonNull Response response) {
-
-                restaurants = yelpService.processResult(response);
+            public void onResponse(@NonNull Call call, @NonNull Response response) {
+                mRestaurants = yelpService.processResults(response);
 
                 RestaurantListActivity.this.runOnUiThread(new Runnable() {
 
                     @Override
                     public void run() {
-                        mAdapter = new RestaurantListAdapter(getApplicationContext(), restaurants);
+                        mAdapter = new RestaurantListAdapter(getApplicationContext(), mRestaurants);
                         mRecyclerView.setAdapter(mAdapter);
 
                         RecyclerView.LayoutManager layoutManager =

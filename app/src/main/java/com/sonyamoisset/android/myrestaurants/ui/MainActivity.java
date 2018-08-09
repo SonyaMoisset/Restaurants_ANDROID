@@ -15,7 +15,6 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
     @BindView(R.id.findRestaurantsButton)
     Button mFindRestaurantsButton;
     @BindView(R.id.locationEditText)
@@ -29,8 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        Typeface ostrichFont =
-                Typeface.createFromAsset(getAssets(), "fonts/ostrich-regular.ttf");
+        Typeface ostrichFont = Typeface.createFromAsset(getAssets(),
+                "fonts/ostrich-regular.ttf");
         mAppNameTextView.setTypeface(ostrichFont);
 
         mFindRestaurantsButton.setOnClickListener(this);
@@ -44,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent =
                     new Intent(MainActivity.this, RestaurantListActivity.class);
             intent.putExtra("location", location);
+
             startActivity(intent);
         }
     }

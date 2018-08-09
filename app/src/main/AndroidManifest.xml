@@ -29,6 +29,8 @@
                 android:value="com.sonyamoisset.android.myrestaurants.ui.MainActivity">
             </meta-data>
         </activity>
+
+        <activity android:name=".ui.RestaurantDetailActivity"/>
     </application>
 
 </manifest>

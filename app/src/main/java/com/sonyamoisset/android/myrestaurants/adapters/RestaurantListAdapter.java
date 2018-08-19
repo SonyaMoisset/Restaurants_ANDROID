@@ -75,7 +75,9 @@ public class RestaurantListAdapter extends RecyclerView.Adapter<RestaurantListAd
         }
 
         private void bindRestaurant(Restaurant restaurant) {
-            Picasso.get().load(restaurant.getImageUrl()).into(mRestaurantImageView);
+            Picasso.get()
+                    .load(restaurant.getImageUrl())
+                    .into(mRestaurantImageView);
 
             mNameTextView.setText(restaurant.getName());
             mCategoryTextView.setText(restaurant.getCategories().get(0));

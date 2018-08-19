@@ -61,10 +61,13 @@ public class RestaurantDetailFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_restaurant_detail, container, false);
+        View view =
+                inflater.inflate(R.layout.fragment_restaurant_detail, container, false);
         ButterKnife.bind(this, view);
 
-        Picasso.get().load(mRestaurant.getImageUrl()).into(mImageLabel);
+        Picasso.get()
+                .load(mRestaurant.getImageUrl())
+                .into(mImageLabel);
 
         mNameLabel.setText(mRestaurant.getName());
         mCategoriesLabel.setText(android.text.TextUtils.join(", ", mRestaurant.getCategories()));

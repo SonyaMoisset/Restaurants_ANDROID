@@ -20,7 +20,6 @@ public class RestaurantDetailActivity extends AppCompatActivity {
     ViewPager mViewPager;
     ArrayList<Restaurant> mRestaurants = new ArrayList<>();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
